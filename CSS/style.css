@@ -1,0 +1,419 @@
+body {
+  font-family:'Times New Roman', Times, serif;
+  
+}
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+  z-index: 99;
+}
+.logo {
+  height: 60px;
+  line-height: 60px;
+  color: #12334e;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 20px;
+}
+#toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#toggle::before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  background: #12334e;
+  transform: translateY(-10px);
+  transition: 0.2s;
+}
+#toggle::after{
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  background: #12334e;
+  transition: 0.2s;
+  box-shadow: 0 10px #12334e;
+}
+#toggle.active::before {
+  transform: translate(0px) rotate(45deg);
+}
+#toggle.active::after {
+  transform: translate(0px) rotate(-45deg);
+  box-shadow: none;
+}
+#navbar {
+  position: relative;
+  height: 60px;
+  right: 60px;
+  background: #fff;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+#navbar ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#navbar ul li {
+  list-style: none;
+}
+#navbar ul li a {
+  color: #12334e;
+  height: 60px;
+  line-height: 60px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0 15px;
+  letter-spacing: 2px;
+}
+/* navbar ends here */
+.header {
+  background-image: url(../img/background.jpeg);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+}
+.header h2 {
+  font-size: 70px;
+  width: 70%;
+  color: white;
+  margin-top: 250px;
+  font-weight: bold;
+}
+/* header ends here */
+.training {
+  background-image: linear-gradient(to right, #1843b6, #df69ff);
+  padding-top: 20px;
+} 
+.training .marathons {
+  text-align: center;
+  margin-top: 60px;
+  color: #fff;
+}
+.training .marathons .fa-solid {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.training .marathons h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.training .marathons p {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+.training .man {
+  margin-top: 150px;
+}
+.training .man h2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 160px;
+}
+.training .man p {
+  color: #fff;
+  margin-top: 20px;
+}
+/* training ends here */
+.shoes {
+  background-color: #1843b6;
+  color: #fff;
+  padding-top: 10px;
+}
+.shoes h2 {
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.shoes p {
+  margin-bottom: 20px;
+}
+.shoes img {
+  width: 100%;
+  margin-top: 30px;
+}
+/* shoes ends here */
+.fun {
+  background-color: #1843b6;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.fun .love {
+  margin-top: 60px;
+}
+.fun .love .fa-solid  {
+  font-size: 50px;
+}
+.fun .love h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.fun .join h3 {
+  font-size: 50px;
+  margin-top: 80px;
+  font-weight: bold;
+}
+.fun .join a {
+  text-decoration: none;
+}
+.fun .join .fa-brands {
+  font-size: 25px;
+  margin-right: 15px;
+  color: #fff;
+}
+/* fun ends here */
+.girl-smash  {
+  background-image: url('../img/background2.png'); 
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.girl-smash h2 {
+  font-size: 80px;
+  margin-top: 270px;
+}
+.girl-smash img {
+  width: 100%;
+  margin: auto;
+}
+/* girl-smash ends here */
+.example {
+  background-image: linear-gradient(to right, #1843b6, #df69ff);
+  padding-top: 100px;
+  color: #fff;
+  padding-bottom: 80px;
+}
+.example img {
+  margin-top: 20px;
+}
+.example h2 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.example ul {
+  margin-top: 30px;
+}
+
+.example ul li {
+  font-size: 24px;
+  list-style-type: decimal;
+  margin-top: 10px;
+}
+/*example ends here */
+.harness {
+  background-color: #1843B6;
+}
+.harness .back-again {
+  background-color: #DF69FF;
+  color: #fff;
+}
+.harness .back-again ul {
+  margin-top: 200px;
+  font-size: 20px;
+}
+.harness .back-before {
+  background-color: #1843B6;
+  color: #fff;
+}
+.harness .back-before h2 {
+  margin-top: 200px;
+  font-size: 20px;
+}
+.harness .back-before h3 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.harness .back-before h4 {
+  font-size: 40px;
+}
+.harness img {
+  width: 100%;
+}
+/* harness ends here */
+footer {
+  background-color: #333333;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+footer h2 {
+  font-size: 18px;
+  margin-top: 30px;
+}
+footer h3 {
+  font-size: 17px;
+  margin-top: 20px;
+}
+footer h3 span {
+  color: #4878fc;
+}
+
+
+
+/* media query here */
+@media (max-width: 1200px) {
+  .harness .back-again ul {
+    margin-top: 100px;
+  }
+  .harness .back-before h2 {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 991px) {
+  #toggle {
+    display: block;
+  }
+  #toggle::before {
+    top: 30px;
+    left: 15px;
+  }
+  #toggle::after{
+    top: 30px;
+    left: 15px;
+  }
+  #navbar {
+    position: fixed;
+    left: -100%;
+    top: 60px;
+    right: 100%;
+    width: 60%;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    background: #12334e;
+    height: calc(100vh - 60px);
+  }
+  #navbar.active {
+    height: calc(100vh - 60px);
+    left: 0;
+    width: 60%;
+  }
+  #navbar ul {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  #navbar ul li a {
+    color: #fff;
+    font-size: 16px;
+  }
+  .header h2 {
+    font-size: 60px;
+    width: 80%;
+  }
+  .training .marathons .fa-solid {
+    margin-top: 80px;
+  }
+  .training .man h2 {
+    font-size: 40px;
+    margin-top: 95px;
+  }
+  .training .man img {
+    width: 100%;
+    margin-top: 125px;
+  }
+  .girl-smash h2 {
+    font-size: 60px;
+    margin-top: 150px;
+  }
+  .girl-smash img {
+    margin-top: 30px;
+  }
+  .example h2 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 40px;
+  }
+  .example ul li {
+    font-size: 20px;
+  }
+  .harness .back-again ul {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .harness .back-before h2 {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .header h2 {
+    font-size: 60px;
+    width: 90%;
+  }
+  .training .man {
+    margin-top: 20px;
+  }
+  .training .man h2 {
+    font-size: 45px;
+    width: 100%;
+  }
+  .training .man img {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .header h2 {
+    font-size: 50px;
+    width: 100%;
+    margin-top: 200px;
+  }
+  .training .man h2 {
+    font-size: 35px;
+  }
+  .shoes h2 {
+    font-size: 40px;
+  }
+  .example h2 {
+    font-size: 45px;
+  }
+  .example ul li {
+    font-size: 18px;
+  }
+  footer h2 {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  footer h3 {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  footer h3 span {
+    color: #4878fc;
+  }
+}
+@media (max-width: 380px) {
+  .header h2 {
+    font-size: 40px;
+    width: 100%;
+  }
+}
